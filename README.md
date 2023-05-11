@@ -6,6 +6,7 @@ Outils pour récupérer tous les entregistrements DNS d'un DNS intégré à l'Ac
 
 Pour utiliser cet outil, il faut installer le paquet de votre distribution offrant la commande `ldapsearch`
 
+ + Sur **fedora**: `dnf install openldap-clients`
  + Sur **Ubuntu**: `apt install ldapscripts`
 
 ## Utilisation :
