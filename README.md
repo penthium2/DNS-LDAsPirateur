@@ -4,7 +4,7 @@ Outils pour récupérer tous les entregistrements DNS d'un DNS intégré à l'Ac
 il faut installer le paquet de votre distribution offrant ldapsearch
 ## utilisation :
 ```
-./dns_ldaspirateur -h <ip/fqdn AD> -u <utilisateurAD> -p '<passwordAD> -d <DC domain>'
+./DNS-LDAsPirateur.sh -h <ip/fqdn AD> -u <utilisateurAD> -p '<passwordAD> -d <DC domain>'
 ```
 Il faut adapté votre domain pour l'argument -d :
 
