@@ -6,4 +6,4 @@ il faut installer le paquet de votre distribution offrant ldapsearch
 ```
 ./dns_ldaspirateur -h <ip/fqdn AD> -u <utilisateurAD> -p '<passwordAD>'
 ```
-le résultat donne tous les fqdn heberger par le DNS du controleur de dommain pour toutes les zones qu'il héberge.
+le résultat donne tous les FQDNs hebergé par le DNS du controleur de dommain pour toutes les zones qu'il héberge.
