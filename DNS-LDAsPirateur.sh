@@ -1,24 +1,26 @@
 #!/bin/bash
 while [[ -n "$1" ]] ; do
         case $1 in
-		      -h|--host)
-        			ldap="$2"
-			        shift 2
-			        ;;
-		      -u|--user)
+	  -h|--host)
+        	ldap="$2"
+	        shift 2
+	        ;;
+	  -u|--user)
               user="$2"
               shift 2
-			        ;;
-		      -p|--password)
+	       ;;
+	  -p|--password)
               password="$2"
               shift 2
-			        ;;
+	       ;;
           -d|-domain)
               domain=$2
               shift 2
-		      *)
-			        echo "synthax error"
-			        exit 2
+	      ;;
+	  *)
+	      echo "syntax error"
+	      exit 2
+		;;
 	      esac
 done
 
