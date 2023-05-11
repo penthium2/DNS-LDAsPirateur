@@ -1,7 +1,13 @@
 # DNS-LDAsPirateur
+
 Outils pour récupérer tous les entregistrements DNS d'un DNS intégré à l'Active Directory
-## installation :
-il faut installer le paquet de votre distribution offrant ldapsearch
+
+## Installation :
+
+Pour utiliser cet outil, il faut installer le paquet de votre distribution offrant la commande `ldapsearch`
+
+ + Sur **Ubuntu**: `apt install ldapscripts`
+
 ## utilisation :
 ```
 ./DNS-LDAsPirateur.sh -h <ip/fqdn AD> -u <utilisateurAD> -p '<passwordAD> -d <DC domain>'
