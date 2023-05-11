@@ -5,23 +5,23 @@ results_per_page=10000
 while [[ -n "$1" ]] ; do
 	case $1 in
 		-h|--host)
-        		ldap="$2"
+        		ldap="${2}"
 			shift 2
 			;;
 		-u|--user)
-			user="$2"
+			user="${2}"
 			shift 2
 			;;
 		-p|--password)
-			password="$2"
+			password="${2}"
 			shift 2
 			;;
 		-d|-domain)
-			domain=$2
+			domain="${2}"
 			shift 2
 			;;
 		*)
-			echo "synthax error"
+			echo "Unknown option '${1}'"
 			exit 2
 			;;
 	      esac
