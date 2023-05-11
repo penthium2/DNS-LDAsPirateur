@@ -7,7 +7,14 @@ il faut installer le paquet de votre distribution offrant ldapsearch
 ./dns_ldaspirateur -h <ip/fqdn AD> -u <utilisateurAD> -p '<passwordAD> -d <DC domain>'
 ```
 Il faut adapté votre domain pour l'argument -d :
-si votre domain est : **ad.zone.local** il faut mettre : **DC=ad,DC=zone,DC=local**
+
+si votre domain est : 
+
+   **ad.zone.local** 
+   
+il faut mettre : 
+
+   **DC=ad,DC=zone,DC=local**
 
 
 le résultat donne tous les FQDNs hebergé par le DNS du controleur de dommain pour toutes les zones qu'il héberge.
