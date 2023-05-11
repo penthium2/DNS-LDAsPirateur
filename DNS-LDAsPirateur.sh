@@ -1,5 +1,8 @@
 #!/bin/bash
 
+echo "[+] DNS-LDAsPirateur.sh - by penthium2"
+echo ""
+
 results_per_page=10000
 
 while [[ -n "$1" ]] ; do
