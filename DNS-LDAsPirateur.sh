@@ -59,7 +59,7 @@ if [[ -z "${ldap}" || -z "${user}" || -z "${password}" || -z "${domain}" ]] ; th
 fi
 # Format the domain
 domain="DC="$(echo "${domain}" | sed 's/\./,DC=/g')
-printf  "Aspiration en cours : "
+echo  "Aspiration en cours : "
 spinner &
 pidspin=$(jobs -p)
 disown
