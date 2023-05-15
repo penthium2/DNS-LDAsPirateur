@@ -37,10 +37,10 @@ function package_statut() {
             [[ ${OS} == "debian-like" ]] && apt -qq install -y ${PACKAGES[$package]} 
             [[ ${OS} == "centos-like" ]] && yum install -y -q ${PACKAGES[$package]} 
             [[ ${OS} == "alpine" ]] && apk add --quiet ${PACKAGES[$package]}
-            if [[ $? != 0 ]]; then
-                echo "[!] error package download"
-                exit 1
-            fi
+            #if [[ $? != 0 ]]; then
+            #    echo "[!] error package download"
+            #    exit 1
+            #fi
         fi
         
         echo "      [DONE] ${PACKAGES[$package]} installed"
